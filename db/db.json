@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Bitcoin",
+    "price": "123.456,78 USD"
+  },
+  {
+    "name": "Etherum",
+    "price": "87.654,32 USD"
+  }
+]
