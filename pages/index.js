@@ -6,9 +6,11 @@ export default function HomePage() {
   return (
     <div>
       <Header />
-      {coinData.map((coin) => (
-        <Card key={coin.name} name={coin.name} price={coin.price} />
-      ))}
+      <ul>
+        {coinData.map((coin) => (
+          <Card key={coin.name} name={coin.name} price={coin.price} />
+        ))}
+      </ul>
     </div>
   );
 }
