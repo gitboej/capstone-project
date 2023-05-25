@@ -7,9 +7,7 @@ export default function HomePage() {
 
   useEffect(() => {
     async function startFetching() {
-      const response = await fetch(
-        "https://api.polygon.io/v2/aggs/grouped/locale/global/market/crypto/2023-05-22?apiKey=tgmy3Uasr3HfP7yyZ6UmwslF9LiHoGjr"
-      );
+      const response = await fetch("/api/crypto");
       const cryptoData = await response.json();
       const cryptos = cryptoData.results;
 
@@ -19,6 +17,7 @@ export default function HomePage() {
     startFetching();
   }, []);
 
+  console.log(cryptos);
   return (
     <div>
       <Header />
