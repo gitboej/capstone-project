@@ -17,7 +17,6 @@ export default function HomePage() {
     startFetching();
   }, []);
 
-  console.log(cryptos);
   return (
     <div>
       <Header />
